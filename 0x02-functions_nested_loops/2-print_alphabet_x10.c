@@ -1,14 +1,12 @@
 #include "main.h"
-
 /**
- * print_alphabet - writes lower case alphabet 10x to stdo
+ * print_alphabet_10x - writes lower case alphabet 10x to stdo
  *
  *
- * Return: void
+ * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-
-void print_alphapet_10x(void)
+void print_alphabet_10x(void)
 {
 	int i;
 	int j;
