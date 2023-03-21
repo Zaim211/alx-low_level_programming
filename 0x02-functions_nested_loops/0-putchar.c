@@ -1,13 +1,22 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
-int main (){
-    char str[100] = "_putchar";
-    
-    for (int i = 0; i < strlen(str); i++){
-        putchar(str[i]);
-        printf("\n");
-    }
+/**
+ * main - Entry poit
+ * Return: Always 0
+ */
 
-    return 0;
+int main(void)
+
+{
+
+         _putchar('_');
+         _putchar('p');
+         _putchar('u');
+         _putchar('t');
+         _putchar('c');
+         _putchar('h');
+         _putchar('a');
+         _putchar('r');
+         _putchar('\n');
+         return (0);
 }
