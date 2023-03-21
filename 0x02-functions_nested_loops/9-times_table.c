@@ -18,8 +18,8 @@ void times_table(void)
 			z = x * y;
 			if (z > 9)
 			{
-				u = ((x / 10) + 48);
-				f = ((z % 10) + 48);
+				u = z % 10
+				f = (z - u) + 10;
 				_putchar(44);
 				_putchar(32);
 				_putchar(u + 48);
