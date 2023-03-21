@@ -19,11 +19,11 @@ void times_table(void)
 			if (z > 9)
 			{
 				u = z % 10
-				f = (z - u) + 10;
+				f = (z - u) / 10;
 				_putchar(44);
 				_putchar(32);
-				_putchar(u + 48);
-				_putchar(f + 48);
+				_putchar(u + '0');
+				_putchar(f + '0');
 			}
 			else
 			{
@@ -33,7 +33,7 @@ void times_table(void)
 					_putchar(32);
 					_putchar(32);
 				}
-				_putchar(z + 48);
+				_putchar(z + '0');
 			}
 		}
 	}
