@@ -22,8 +22,8 @@ void times_table(void)
 				f = (z - u) / 10;
 				_putchar(44);
 				_putchar(32);
-				_putchar(u + '0');
 				_putchar(f + '0');
+				_putchar(u + '0');
 			}
 			else
 			{
@@ -36,5 +36,6 @@ void times_table(void)
 				_putchar(z + '0');
 			}
 		}
+	_putchar('\n');
 	}
 }
