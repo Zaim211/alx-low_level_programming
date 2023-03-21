@@ -1,20 +1,25 @@
 #include "main.h"
 /**
- * print_alphabet_10x - writes lower case alphabet 10x to stdo
+ * print_alphabet_x10 - writes lower case alphabet 10X to stdo
  *
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-void print_alphabet_10x(void)
+void print_alphabet_x10(void)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	for (i = 1 ; i <= 10 ; i++)
+	while (i < 10)
 	{
-		for (j = 'a'; j <= 'z'; j++)
-			_putchar(j);
-		_putchar('\n');
+		char ch[28] = "abcdefghijklmnopqrstuvwxyz\n";
+		int j = 0;
+
+		while (ch[j] != '\0')
+		{
+			_putchar(ch[j]);
+			j++;
+		}
+	i++;
 	}
 }
