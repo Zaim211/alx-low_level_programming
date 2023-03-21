@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()	
+int main (){
+    char str[100] = "_putchar";
+    
+    for (int i = 0; i < strlen(str); i++){
+        putchar(str[i]);
+        printf("\n");
+    }
 
-{
-	char ch = '_putchar';
-
-	putchar(ch);
-	return 0;
+    return 0;
 }
