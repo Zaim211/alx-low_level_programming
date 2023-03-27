@@ -20,7 +20,7 @@ void puts2(char *str)
 	t = longi - 1;
 	for (r = 0 ; r <= t ; r++)
 	{
-		if (o % 2 == 0)
+		if (r % 2 == 0)
 	{
 		_putchar(str[r]);
 	}
