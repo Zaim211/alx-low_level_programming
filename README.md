@@ -1,1 +1,1 @@
-preprocessor
+C - Pointers, arrays and strings
