@@ -6,15 +6,16 @@
  * @src: input value
  * @n: input value
  *
- * Return dest
+ * Return: dest
  **/
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int j;
 
-	for (i = 0; i != '\0'; i++)
-
+	for (i = 0; dest[i] != '\0'; i++)
+	{
+	}
 	for (j < n && src[j] != '\0')
 	{
 		dest[i] = src[j];
