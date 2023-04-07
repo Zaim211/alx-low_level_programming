@@ -1,2 +1,2 @@
-int main(int argc, char argv);
 int putchar(int char);
+int _atoi(char *s);
