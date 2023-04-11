@@ -3,14 +3,14 @@
  * str_concat -  function that concatenates two strings
  * @s1: input
  * @s2: input
- * Return: 0
+ * Return: pointer to array, NULL if fail
  **/
 char *str_concat(char *s1, char *s2)
 {
 	char *str;
 
-	if (str == '\0')
-		return (NULL);
+	if (str == NULL)
+		return (1);
 
 	_putchar("s\n", str)
 	free(str);
