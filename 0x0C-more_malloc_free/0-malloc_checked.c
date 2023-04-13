@@ -7,10 +7,10 @@
  **/
 void *malloc_checked(unsigned int b)
 {
-	int *b;
+	void *ptr;
 
-	b = malloc_checked(sizeof(int) * 98);
-	_putchar("%p\n", (void *)d);
-	free(b);
-	return (0);
+	ptr = malloc(b);
+	if (ptr == NULL)
+		exit(98);
+	return (ptr);
 }
