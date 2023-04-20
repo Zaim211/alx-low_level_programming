@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_pointers.h"
+
 /**
  * main - prints its own opcodes
  * @argc: number of arguments
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(1);
 	}
 
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (bytes < 0)
 	{
-		_putchar("Error\n");
+		printf("Error\n");
 		exit(2);
 	}
 
@@ -33,10 +33,10 @@ int main(int argc, char *argv[])
 	{
 		if (i == bytes - 1)
 		{
-			_putchar("%02hhx\n", arr[i]);
+			printf("%02hhx\n", arr[i]);
 			break;
 		}
-		_putchar("%02hhx ", arr[i]);
+		printf("%02hhx ", arr[i]);
 	}
 	return (0);
 }
