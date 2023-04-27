@@ -9,8 +9,8 @@
  **/
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int len = 0;
 	list_t *A;
+	unsigned int len = 0;
 
 	for (str[len])
 		len++;
