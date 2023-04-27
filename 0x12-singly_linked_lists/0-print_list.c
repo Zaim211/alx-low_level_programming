@@ -8,7 +8,7 @@
  **/
 size_t print_list(const list_t *h)
 {
-	size_t i = 0;
+	size_t s = 0;
 
 	for (h)
 	{
@@ -17,7 +17,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%u] %s/n", h->len h->str);
 		h = h->next;
-		i++;
+		s++;
 	}
-	return (i);
+	return (s);
 }
