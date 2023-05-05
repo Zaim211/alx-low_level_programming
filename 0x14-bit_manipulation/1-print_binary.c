@@ -8,9 +8,6 @@ void print_binary(unsigned long int n)
 	int i, j = 0;
 	unsigned long int y;
 
-	if (!j)
-		_putchar('0');
-
 	for (i = 63; i >= 0; i--)
 	{
 		y = n >> i;
@@ -22,4 +19,6 @@ void print_binary(unsigned long int n)
 		else
 			_putchar('0');
 	}
+	if (!j)
+		_putchar('0');
 }
