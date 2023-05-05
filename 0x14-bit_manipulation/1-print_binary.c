@@ -17,7 +17,7 @@ void print_binary(unsigned long int n)
 		if (y & 1)
 		{
 			_putchar('1');
-			y++;
+			j++;
 		}
 		else
 			_putchar('0');
