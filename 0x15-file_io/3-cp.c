@@ -29,7 +29,7 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Close file
- * @fd: The file to be closed.
+ * @fd: The file to be close
  **/
 void close_file(int fd)
 {
