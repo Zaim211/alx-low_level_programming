@@ -20,8 +20,7 @@ char *create_buffer(char *file)
 
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO,
-			"err %s\n", file);
+		dprintf(STDERR_FILENO, "err %s\n", file);
 		exit(99);
 	}
 	return (buffer);
@@ -39,7 +38,7 @@ void close_file(int fd)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "err %d\n", fd);
+		dprintf(STDERR_FILENO, "err: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -57,7 +56,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "cp file\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
