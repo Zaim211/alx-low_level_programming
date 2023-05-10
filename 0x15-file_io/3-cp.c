@@ -34,11 +34,11 @@ char *create_buffer(char *file)
  **/
 void close_file(int fp)
 {
-	int x;
+	int c;
 
-	x = close(fp);
+	c = close(fp);
 
-	if (x == -1)
+	if (c == -1)
 	{
 		dprintf(STDERR_FILENO, "err %d\n", fp);
 		exit(100);
