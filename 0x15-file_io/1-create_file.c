@@ -1,3 +1,7 @@
+#include <unistd.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 #include "main.h"
 /**
  * create_file - Function that creates a file
