@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 /**
  * create_file - Function that creates a file
