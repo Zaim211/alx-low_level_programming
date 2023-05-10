@@ -1,10 +1,9 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-
 
 char *create_buffer(char *file);
 void close_file(int fp);
