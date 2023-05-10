@@ -2,7 +2,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 char *create_buffer(char *file);
