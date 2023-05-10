@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 char *create_buffer(char *file);
-void close_file(int fp);
+void close_file(int fd);
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file buffer
@@ -29,9 +29,9 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Close file
- * @fp: The file to be closed.
+ * @fd: The file to be closed.
  **/
-void close_file(int fp)
+void close_file(int fd)
 {
 	int c;
 
@@ -39,7 +39,7 @@ void close_file(int fp)
 
 	if (c == -1)
 	{
-		dprintf(STDERR_FILENO, "err %d\n", fp);
+		dprintf(STDERR_FILENO, "err %d\n", fd);
 		exit(100);
 	}
 }
