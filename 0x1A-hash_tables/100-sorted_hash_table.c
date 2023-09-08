@@ -148,34 +148,3 @@ void shash_table_print_rev(const shash_table_t *ht)
 	}
 	printf("}\n");
 }
-
-/**
- * shash_table_delete - Function to deletes a sorted hash table
- * @ht: The hash table to delete
- *
- * Return: void
- */
-void shash_table_delete(shash_table_t *ht)
-{
-	unsigned long int index;
-	shash_node_t *next;
-
-	if (ht == NULL || ht->array == NULL || ht->size == 0)
-		return;
-	for (index = 0; index < ht->size; index++)
-	{
-		while (ht->array[index] != NULL)
-		{
-			next = ht->array[index]->next;
-			free(ht->array[index]->key);
-			free(ht->array[index]->value);
-			free(ht->array[index]);
-			ht->array[i] = next;
-		}
-	}
-	free(ht->array);
-	ht->array = NULL;
-	ht->shead = ht->stail = NULL;
-	ht->size = 0;
-	free(ht);
-}
