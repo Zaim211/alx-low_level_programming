@@ -2,9 +2,9 @@
 
 /**
  * hash_table_print - Function that prints a hash table
- * @ht: The hash table
+ * @ht: The hash table to print
  *
- * Return: Void
+ * Return: void
  */
 void hash_table_print(const hash_table_t *ht)
 {
